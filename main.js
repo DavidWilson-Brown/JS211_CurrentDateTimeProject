@@ -13,13 +13,21 @@ const displayDate = () => {
   document.getElementById("display-element").innerHTML = currentDate;
 }
  
+date();
 
 // Write a JavaScript program to convert a number to a string.
+const num2String = (num) => {
+  return num.toString();
+}
 
+const result = num2String(42);
 
+console.log(typeof result);
 
 // Write a JavaScript program to convert a string to the number.
-
+const string2Num = (str) => {
+  return parseInt(str);
+}
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,9 +38,17 @@ const displayDate = () => {
   // * NaN
   // * String
   
-
+// Write a function that takes in a data type
+// return the type of that variable - using the 'typeof' operator
   
 // Write a JavaScript program that adds 2 numbers together.
+const add = (num1, num2) => {
+  return num1 + num2;
+}
+
+console.log(add ('ANSWER' 2, 5));
+
+
 
 
 
