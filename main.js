@@ -32,14 +32,50 @@ const string2Num = (str) => {
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
+Boolean (12 > 88);
+
   // * Null
+let person = () => {
+  firstName: "Frank"
+  lastName: "Sinatra",
+  age: 47,
+  eyeColor: "Blue"
+}
+
+person = null;
+
+
   // * Undefined
-  // * Number
-  // * NaN
-  // * String
+  let car;
+  car + "<br>" + typeof car;
   
+
+  // * Number
+let x = 54;
+
+  // * NaN
+  //  should return false
+isNaN(6)
+
+
+  // * String
+typeof "" + "<br>" +
+typeof "Jack" + "<br>" + 
+typeof "Jack Nicholson";
+
+
+
 // Write a function that takes in a data type
 // return the type of that variable - using the 'typeof' operator
+const variableOne = 0;
+const variableTwo = "Apple";
+const variableThree = {id: 42, name: "Jackie"}
+
+typeof varbleOne;
+typeof variableTwo;
+typeof variableThree;
+
+
   
 // Write a JavaScript program that adds 2 numbers together.
 const add = (num1, num2) => {
@@ -49,15 +85,23 @@ const add = (num1, num2) => {
 console.log(add ('ANSWER' 2, 5));
 
 
-
-
-
 // Write a JavaScript program that runs only when 2 things are true.
-
+const partyTime = () => {
+  let age = 35;
+  let day = "Saturday";
+  message = "Party On Wayne!"
+  if(age >= 21 && day == "Saturday") {
+ } else { 
+   message = "Not tonight."  
+}
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-
+if (x > y) {
+  alert("Hello World");
+} else {
+  alert("Goodbye");
+}
 
 
 // Write a JavaScript program that runs when both things are not true.  
