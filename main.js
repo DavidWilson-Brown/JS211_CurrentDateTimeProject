@@ -16,18 +16,15 @@ const displayDate = () => {
 date();
 
 // Write a JavaScript program to convert a number to a string.
-const num2String = (num) => {
-  return num.toString();
-}
+const num = 42;
+const str = num.toString();
 
-const result = num2String(42);
-
-console.log(typeof result);
+console.log(num);
+console.log(str);
 
 // Write a JavaScript program to convert a string to the number.
-const string2Num = (str) => {
-  return parseInt(str);
-}
+const text = "42px";
+const integer = parseInt(42, 10);
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -35,25 +32,31 @@ const string2Num = (str) => {
 Boolean (12 > 88);
 
   // * Null
-let person = () => {
-  firstName: "Frank"
-  lastName: "Sinatra",
-  age: 47,
-  eyeColor: "Blue"
-}
-
-person = null;
+let foo = null;
 
 
   // * Undefined
-  let car;
-  car + "<br>" + typeof car;
-  
+const test = (t) => {
+  if(t === undefined) {
+    return 'Undefined value!';
+  }
+  return t;
+}
+  console.log(test(x));
 
   // * Number
 let x = 54;
 
   // * NaN
+const sanitise = (x) => {
+  if(isNaN(x)) {
+    return NaN;
+  }
+  return x;
+}
+
+console.log(sanitis('NotANumber'));
+
   //  should return false
 isNaN(6)
 
@@ -64,17 +67,22 @@ typeof "Jack" + "<br>" +
 typeof "Jack Nicholson";
 
 
-
 // Write a function that takes in a data type
+const add = (num1, num2) => {
+  return num1 + num2;
+}
+
+console.log('ANSWER IS: ' + add(2, 5));
+
+
 // return the type of that variable - using the 'typeof' operator
 const variableOne = 0;
 const variableTwo = "Apple";
 const variableThree = {id: 42, name: "Jackie"}
 
-typeof varbleOne;
+typeof variableOne;
 typeof variableTwo;
 typeof variableThree;
-
 
   
 // Write a JavaScript program that adds 2 numbers together.
@@ -82,29 +90,38 @@ const add = (num1, num2) => {
   return num1 + num2;
 }
 
-console.log(add ('ANSWER' 2, 5));
+console.log('ANSWER IS: ' + add(2, 5));
 
 
 // Write a JavaScript program that runs only when 2 things are true.
-const partyTime = () => {
-  let age = 35;
-  let day = "Saturday";
-  message = "Party On Wayne!"
-  if(age >= 21 && day == "Saturday") {
- } else { 
-   message = "Not tonight."  
+let hour = 10;
+
+if (hour >= 6 && hour < 12) {
+  console.log('Good morning');
+} else {
+  console.log('Good evening');
 }
+
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-if (x > y) {
-  alert("Hello World");
-} else {
-  alert("Goodbye");
-}
+let hour = 23;
+
+if (hour <= 6 || hour <= 12) {
+  console.log("Let's get breakfast");
+  } else {
+  console.log("Let's grab some lunch or an early dinner");
+  }
 
 
 // Write a JavaScript program that runs when both things are not true.  
+let balance = 125;
+
+if (balance > 80 && balance <= 100) {
+  console.log('The price is right')
+} else {
+  console.log('The price is wrong bro!');
+}
 
 // ***************************
 //         PART TWO
